@@ -16,3 +16,10 @@ the "c" (capture) option, e.g. "v100".
 entering "c100" will acquire 100 images while slowly counting back the
 focus position from 100 down to 1. after setting each new focus
 position the arduino waits 20ms for the stage to stabilize.
+
+
+C    .. aborts current acquisition
+t    .. triggers camera once
+v<n> .. outputs <n> on the dac (0<= n < 4095)
+c<n> .. acquire multiple images and counts n down to 0 (0<= n < 4095)
+f<b> .. f0 turns of manual focus mode, f1 turns manual focus mode on (camera is continuously triggered) 
