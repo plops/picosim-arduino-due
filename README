@@ -1,0 +1,18 @@
+Procedure to acquire image:
+
+first enter "f1" to go into manual focus mode. The camera will start
+to continuously capture every 10ms. (The camera trigger input should
+be connected to pin 2)
+
+enter "v0" to put pifoc into one of its limit positions.
+
+alternatively you can check with, e.g. "v10" how the image changes
+with defocus.
+
+you make sure you bring pifoc to the maximal position before you use
+the "c" (capture) option, e.g. "v100".
+
+
+entering "c100" will acquire 100 images while slowly counting back the
+focus position from 100 down to 1. after setting each new focus
+position the arduino waits 20ms for the stage to stabilize.
